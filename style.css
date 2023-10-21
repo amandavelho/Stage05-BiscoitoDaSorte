@@ -46,6 +46,20 @@ p {
     margin-bottom: 3rem;
 }
 
+.screen1 img:hover {
+    animation: tremer 0.1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+
 /* screen2 */
 
 .screen2 {
@@ -67,6 +81,8 @@ h2 {
     background: #E4EDF1;
     box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
     margin: 0;
+
+    animation: openCookie 3s ease-in-out forwards;
 }
 
 .screen2 img {
@@ -94,5 +110,12 @@ h2 {
     display: none;
 }
 
-
+@keyframes openCookie {
+    0% {
+      transform: translateY(150px) scale(0.1);
+    }
+    100% {
+      transform: translateY(0px) scale(1);
+    }
+  }
 
